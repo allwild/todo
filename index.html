@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/631fd4a599.js" crossorigin="anonymous"></script>   
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&family=PT+Sans&family=Pacifico&family=Paytone+One&family=Titillium+Web&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div id="description"></div>
+    <header>
+        <h1 id="title">To Do App</h1>
+    </header>
+    <div id="newtodo">
+        <h3>New Task</h3>
+        <div id="newentries">
+            <div id="holderform">
+                <input id="newtodo-input" type="text" placeholder="Enter task">
+                <button id="addbuton" class="button-69">Add</button>
+            </div>
+            <div>
+                <label for="starttime">Start</label>
+                <input id="starttime" type="time" min="00:00" max="24:00" value="08:00">
+            </div>
+            <div>
+                <label for="finishtime">Finish</label>
+                <input id="finishtime" type="time" min="00:00" max="24:00" value="09:00">
+            </div>
+        </div>
+    </div>
+
+    <div id="list-container">
+        <div id="list-container-inner">
+            <h3 id="list-title">Tasklist</h3>
+            <div id="header">
+                <span>Priority</span>
+                <span>Task</span>
+                <span>Start Time</span>
+                <span>Finish Time</span>
+                <div>
+                    <input type="checkbox" id="selectall" disabled="">
+                    <label for="selectall">Done All</label>
+                </div>
+                <i id="deleteall" class="fa-regular fa-trash-can"></i>
+                <div></div>
+            </div>
+            <ul id="list" style="list-style: none">
+            </ul>
+        </div>
+    </div>
+    <script src="logic2.js"></script>
+
+</body>
+</html>
